@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Exercice 01 Séance 02</h1>
-    <p></p>
+    <p>Intégration de stats récupérés sur Wikidata</p>
+    <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23Stations%20de%20m%C3%A9tro%20%C3%A0%20Paris%0ASELECT%20%3Fitem%20%3FitemLabel%20%3Fadjacent%20%3FadjacentL%20%3Fcoords%0A%7B%0A%20%20%3Fitem%20wdt%3AP31%2Fwdt%3AP279*%20wd%3AQ928830%20%3B%0A%20%20%20%20%20%20%20%20wdt%3AP81%20wd%3AQ13224%20%3B%0A%20%20%20%20%20%20%20%20wdt%3AP625%20%3Fcoords%20.%0A%20%20OPTIONAL%20%7B%0A%20%20%20%20%3Fitem%20p%3AP197%20%5B%20ps%3AP197%20%3Fadjacent%20%3B%20pq%3AP5051%20wd%3AQ585752%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20pq%3AP81%20wd%3AQ13224%5D%20.%0A%20%20%20%20%3Fadjacent%20rdfs%3Alabel%20%3FadjacentL%20FILTER%20(lang(%3FadjacentL)%20%3D%20%22en%22)%0A%20%20%7D%0A%3Fitem%20wdt%3AP1619%20%3Ffounded_date.%20%23needs%20existence%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%20%7D%0A%7D%20ORDER%20BY%20%3FitemLabel" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 </body>
 </html>
